@@ -59,3 +59,23 @@ body{ margin: 0; }
 .nav-links a:hover{
   color: #d4b07a;        
 }
+
+.section {
+  height: 100vh;              
+  display: flex;
+  align-items: center;        
+  justify-content: center;    
+  font-family: 'Forum', serif; 
+  font-size: 2rem;
+  color: white;
+}
+
+#home { background: #1d2f46; }
+#vantagens { background: #4d5f76; }
+#equipe { background: #3d4f66; }
+#contato { background: #5d6f86; }
+
+html {
+    scroll-behavior: smooth;
+}
+
