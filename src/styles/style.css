@@ -70,10 +70,25 @@ body{ margin: 0; }
   color: white;
 }
 
-#home { background: #1d2f46; }
-#vantagens { background: #4d5f76; }
-#equipe { background: #3d4f66; }
-#contato { background: #5d6f86; }
+#home { 
+  background: #1d2f46; /* azul escuro */
+}
+
+#vantagens { 
+  background: #4d5f76; /* azul/cinza médio */
+}
+
+#diferenciais { 
+  background: #2e4057; /* azul acinzentado escuro */
+}
+
+#areas { 
+  background: #3c566e; /* azul médio mais claro */
+}
+
+#contato { 
+  background: #5d6f86; /* azul acinzentado claro */
+}
 
 html {
     scroll-behavior: smooth;
