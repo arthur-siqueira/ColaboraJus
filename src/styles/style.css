@@ -71,23 +71,23 @@ body{ margin: 0; }
 }
 
 #home { 
-  background: #1d2f46; /* azul escuro */
+  background: #1d2f46; 
 }
 
 #vantagens { 
-  background: #4d5f76; /* azul/cinza médio */
+  background: #4d5f76; 
 }
 
 #diferenciais { 
-  background: #2e4057; /* azul acinzentado escuro */
+  background: #2e4057; 
 }
 
 #areas { 
-  background: #3c566e; /* azul médio mais claro */
+  background: #3c566e; 
 }
 
 #contato { 
-  background: #5d6f86; /* azul acinzentado claro */
+  background: #5d6f86; 
 }
 
 html {
