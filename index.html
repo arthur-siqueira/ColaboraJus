@@ -1,87 +1,253 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colabora Jus</title>
-    <link rel="stylesheet" href="src/styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ColaboraJus</title>
+  <meta name="description" content="" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Ccircle cx='128' cy='128' r='120' fill='%23006341'/%3E%3Cpath d='M128 50l58 156h-20l-13-38H103l-13 38H70L128 50zm0 46l-20 56h40l-20-56z' fill='white'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="src/styles/style.css">
+  <link rel="script" href="src/javascript/script.js"/>
 
 </head>
 <body>
-    <header class="site-header">
-        <nav class="nav">
-            <a href="index.html" class="logo">
-            <img src="./src/img/logoimagem.png" alt="Logomarca" class="logo-icon">
-            <img src="./src/img/logonome.png"  alt="Colabora Jus" class="logo-text">
-            </a>
+  
 
-            <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#vantagens">Vantagens</a></li>
-            <li><a href="#diferenciais">Diferenciais</a></li>
-            <li><a href="#areas">Áreas de atuação</a></li>
-            <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-   <section id="home" class="section">
-    <div class="content">
-      <h1>Bem-vindo ao Colabora Jus</h1>
-      <p>Otimizamos a rotina dos escritórios de advocacia com petições personalizadas, seguras e fundamentadas.</p>
+  <div class="topbar" aria-label="Informações de contacto">
+    <div class="container">
+      <div class="links">
+       <a href="mailto:contacto@email.adv" aria-label="Enviar e-mail">✉️ contacto@email.adv</a>
+      </div>
     </div>
-  </section>
-
-  <section id="vantagens" class="section">
-    <div class="content">
-      <h2>Vantagens</h2>
-      <ul>
-        <li><strong>Mais tempo:</strong> foque na estratégia enquanto cuidamos das peças.</li>
-        <li><strong>Redução de custos:</strong> pague apenas pelo que precisa, sem contratação extra.</li>
-        <li><strong>Escalabilidade:</strong> aumente a capacidade de atendimento sem perder qualidade.</li>
-        <li><strong>Tranquilidade:</strong> entregas revisadas e dentro do prazo combinado.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="diferenciais" class="section">
-    <div class="content">
-      <h2>Diferenciais</h2>
-      <p>Contamos com uma equipe altamente qualificada, com experiência em diferentes áreas do Direito.</p>
-      <ul>
-        <li>Petição sob medida, respeitando o estilo do escritório.</li>
-        <li>Pesquisa jurisprudencial e doutrinária atualizada.</li>
-        <li>Confidencialidade total no tratamento de dados e documentos.</li>
-        <li>Atendimento ágil e suporte próximo ao advogado parceiro.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="areas" class="section">
-  <div class="content">
-    <h2>Áreas de Atuação</h2>
-    <p>Produzimos petições iniciais em todas as áreas do Direito em que atuamos, sempre fundamentadas em legislação, doutrina e jurisprudência atualizadas.</p>
-    <ul>
-      <li><strong>Direito Cível:</strong> abrangemos todas as matérias cíveis — contratos, responsabilidade civil, família, sucessões, consumidor, empresarial, entre outras. Elaboramos iniciais, contestações, recursos, execuções e medidas de urgência.</li>
-      <li><strong>Direito Previdenciário:</strong> iniciais de concessão e revisão de benefícios, ações de aposentadoria, auxílio-doença, pensão e demandas correlatas.</li>
-      <li><strong>Direito Tributário:</strong> iniciais de ações anulatórias, declaratórias, mandados de segurança, defesas administrativas e judiciais contra exigências fiscais.</li>
-    </ul>
   </div>
-</section>
 
-  <section id="contato" class="section">
-    <div class="content">
-      <h2>Contato</h2>
-      <p>Quer saber mais ou solicitar uma petição?</p>
-      <p>Email: <a href="mailto:contato@colaborajus.com.br">contato@colaborajus.com.br</a></p>
-      <p>WhatsApp: (xx) xxxx-xxxx</p>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Principal">
+      <div class="brand">
+        <img src="src/img/logoimagem.png"  class="brand-logo" >
+        <div aria-hidden="true"></div>
+        <a href="#" aria-label="Página inicial"><strong>Colabora Jus</strong><br /><small></small></a>
+      </div>
+      <nav>
+        <button class="hamburger" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+        <ul id="menu">
+          <li><a class="active" href="#inicio">Início</a></li>
+          <li><a href="#vantagens">Vantagens</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#areas">Nossos Serviços</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn" href="#contactos">Consulta Rápida</a>
+      </div>
+    </div>
+  </header>
+
+  
+  <section id="inicio" class="main">
+    <div class="container">
+      <div>
+        <h1>Agilidade e precisão na construção de petições.</h1>
+        <p>Otimizamos a rotina dos escritórios de advocacia com petições personalizadas, seguras e fundamentadas.</p>
+        <div class="main-list">
+          <div class="stat"><b>Otimize</b><small>Simplificamos suas petições, você conquista mais tempo.</small></div>
+          <div class="stat"><b>Tercerize</b><small>Produção terceirizada de petições e documentos jurídicos, feitos sob medida para você.</small></div>
+          <div class="stat"><b>Advogadas Especializadas</b><small>Excelência jurídica garantida por uma equipe multidisciplinar.</small></div>
+        </div>
+        <div style="margin-top:18px;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+          <a class="btn" href="#contactos">Fale com um advogado</a>
+          <span class="stamp">✔ Inscrição válida na OAB</span>
+        </div>
+      </div>
+      <div class="illus" role="img" aria-label="Imagem ilustrativa de balança da justiça">
+       <img src="src/img/Jus.jpg" style="height: 100%; width: 100%; border-radius: 10px;">
+      </div>
     </div>
   </section>
-</body>
-</html>
 
+  
+
+
+  <section id="vantagens" class="news">
+    <div class="container">
+      <div class="section-head">
+        <h2>Vantagens</h2>
+       
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <span>adicionar icon de relogio</span>
+          <h3>Mais Tempo</h3>
+          <p>Foque na estratégia enquanto cuidamos das peças.</p>
+       
+        </article>
+        <article class="card">
+          <span>adicionar icon de redução de custos</span>
+          <h3>Redução de custos</h3>
+          <p>Pague apenas pelo que precisa, sem contratação extra.</p>
+         
+        </article>
+        <article class="card">
+          <span>adicionar icon de seta subindo</span>
+          <h3>Escalabilidade</h3>
+          <p>Aumente a capacidade de atendimento sem perder qualidade.</p>
+          
+        </article>
+         <article class="card">
+          <span>adicionar icon de check</span>
+          <h3>Tranquilidade</h3>
+          <p>Entregas revisadas e dentro do prazo combinado.</p>
+         
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="diferenciais" class="news">
+    <div class="container">
+      <div class="section-head">
+        <h2>Diferenciais</h2>
+        <p>Contamos com uma equipe altamente qualificada, com experiência em diferentes áreas do Direito.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <span class="badge">Personalização</span>
+          <h3>TITULO</h3>
+          <p>Petição sob medida, respeitando o estilo do escritório.</p>
+         
+        </article>
+        <article class="card">
+          <span class="badge">Petições atualizadas</span>
+           <h3>TITULO</h3>
+          <p>Pesquisa jurisprudencial e doutrinária atualizada.</p>
+          
+        </article>
+        <article class="card">
+          <span class="badge">Confiança</span>
+            <h3>TITULO</h3>
+         
+    
+          <p>Confidencialidade total no tratamento de dados e documentos.</p>
+         
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="areas" class="practice">
+    <div class="container">
+      <div class="section-head">
+        <h2>Nossos Serviços</h2>
+        <a class="btn btn-outline" href="#contactos">Precisa de ajuda?</a>
+      </div>
+      <div class="grid-3">
+        <div class="card item">
+          <h3>Redação de Petições</h3>
+          <p>Elaboração de peças jurídicas personalizadas, com clareza, precisão e fundamentação sólida, para assegurar a defesa dos interesses do cliente. Cada petição é construída de forma estratégica, unindo técnica, persuasão e segurança jurídica.</p>
+          </div>
+        <div class="card item">
+         <h3>Contratos</h3>
+          <p>Desenvolvemos e revisamos contratos personalizados, claros e seguros, garantindo que seus direitos e interesses estejam devidamente protegidos e prevenindo riscos jurídicos futuros.</p>
+        </div>
+        <div class="card item">
+         <h3>Análise de Cabimento</h3>
+          <p>Avaliamos a viabilidade da medida judicial ou administrativa antes de sua propositura, garantindo maior segurança, economia de tempo e aumento das chances de êxito da demanda.</p>
+        </div>
+         <div class="card item">
+          <h3>Parecer Jurídico</h3>
+          <p>Fornecemos análises jurídicas claras e fundamentadas para orientar decisões estratégicas. Nossos pareceres oferecem segurança, previsibilidade e respaldo técnico, auxiliando na prevenção de riscos e na escolha do melhor caminho jurídico.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<div id="wpp">
+        <div class="nav-bottom">
+            <div class="popup-whatsapp fadeIn">
+            <div class="content-whatsapp -top">
+            <button type="button" class="closePopup">
+            <i class="material-icons icon-font-color">X</i>
+            </button>
+              
+            <p>Olá Tudo bem?
+            <br> 
+            Entre em contato conosco pelo whatsapp
+            </p>
+              
+            </div>
+                          
+            <div class="content-whatsapp -bottom">
+            <input class="whats-input" id="whats-in" type="text" Placeholder="Digite sua mensagem" />
+            <button class="send-msPopup" id="send-btn" type="button">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+             
+            </div>
+            </div>
+            <button type="button" id="whats-openPopup" class="whatsapp-button">
+            <svg class="icon-whatsapp" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 258"><defs><linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#1faf38"/><stop offset="100%" stop-color="#60d669"/></linearGradient><linearGradient id="logosWhatsappIcon1" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#f9f9f9"/><stop offset="100%" stop-color="#fff"/></linearGradient></defs><path fill="url(#logosWhatsappIcon0)" d="M5.463 127.456c-.006 21.677 5.658 42.843 16.428 61.499L4.433 252.697l65.232-17.104a122.994 122.994 0 0 0 58.8 14.97h.054c67.815 0 123.018-55.183 123.047-123.01c.013-32.867-12.775-63.773-36.009-87.025c-23.23-23.25-54.125-36.061-87.043-36.076c-67.823 0-123.022 55.18-123.05 123.004"/><path fill="url(#logosWhatsappIcon1)" d="M1.07 127.416c-.007 22.457 5.86 44.38 17.014 63.704L0 257.147l67.571-17.717c18.618 10.151 39.58 15.503 60.91 15.511h.055c70.248 0 127.434-57.168 127.464-127.423c.012-34.048-13.236-66.065-37.3-90.15C194.633 13.286 162.633.014 128.536 0C58.276 0 1.099 57.16 1.071 127.416m40.24 60.376l-2.523-4.005c-10.606-16.864-16.204-36.352-16.196-56.363C22.614 69.029 70.138 21.52 128.576 21.52c28.3.012 54.896 11.044 74.9 31.06c20.003 20.018 31.01 46.628 31.003 74.93c-.026 58.395-47.551 105.91-105.943 105.91h-.042c-19.013-.01-37.66-5.116-53.922-14.765l-3.87-2.295l-40.098 10.513z"/><path fill="#fff" d="M96.678 74.148c-2.386-5.303-4.897-5.41-7.166-5.503c-1.858-.08-3.982-.074-6.104-.074c-2.124 0-5.575.799-8.492 3.984c-2.92 3.188-11.148 10.892-11.148 26.561c0 15.67 11.413 30.813 13.004 32.94c1.593 2.123 22.033 35.307 54.405 48.073c26.904 10.609 32.379 8.499 38.218 7.967c5.84-.53 18.844-7.702 21.497-15.139c2.655-7.436 2.655-13.81 1.859-15.142c-.796-1.327-2.92-2.124-6.105-3.716c-3.186-1.593-18.844-9.298-21.763-10.361c-2.92-1.062-5.043-1.592-7.167 1.597c-2.124 3.184-8.223 10.356-10.082 12.48c-1.857 2.129-3.716 2.394-6.9.801c-3.187-1.598-13.444-4.957-25.613-15.806c-9.468-8.442-15.86-18.867-17.718-22.056c-1.858-3.184-.199-4.91 1.398-6.497c1.431-1.427 3.186-3.719 4.78-5.578c1.588-1.86 2.118-3.187 3.18-5.311c1.063-2.126.531-3.986-.264-5.579c-.798-1.593-6.987-17.343-9.819-23.64"/></svg>
+            </button>
+            <div class="circle-anime"></div>
+              
+            </div>
+    </div>
+    
+  <footer>
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div>
+          <div class="brand" style="margin-bottom:10px">
+            <img class="brand-logo" src="src/img/logoimagem.png" alt="">
+            <div>
+              <strong>Colabora Jus</strong><br /><small>mensagem x</small>
+            </div>
+          </div>
+          <p>Transformamos sua necessidade em soluções jurídicas.</p>
+        </div>
+        <div>
+          <h4>Ordem dos Advogados</h4>
+          <p style="margin:0">Inscrição ativa. Consulte o nosso registo.</p>
+          <a class="btn btn-outline" href="#">Ver registo</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div>© <span id="year"></span> Colabora Jus — Todos os direitos reservados.</div>
+     
+    </div>
+  </footer>
+<script>
+function openWhats(){
+    window.open('https://wa.me/558199456533'); 
+  }
+popupWhatsApp = () => {
+  
+    let btnClosePopup = document.querySelector('.closePopup');
+    let btnOpenPopup = document.querySelector('.whatsapp-button');
+    let popup = document.querySelector('.popup-whatsapp');
+    let sendBtn = document.getElementById('send-btn');
+  
+    btnClosePopup.addEventListener("click",  () => {
+      popup.classList.toggle('is-active-whatsapp-popup')
+    })
+    
+    btnOpenPopup.addEventListener("click",  () => {
+      popup.classList.toggle('is-active-whatsapp-popup')
+       popup.style.animation = "fadeIn .6s 0.0s both";
+    })
+    
+    sendBtn.addEventListener("click", () => {
+    let msg = document.getElementById('whats-in').value;
+    let relmsg = msg.replace(/ /g,"%20");   
+     window.open('https://wa.me/558198753455?text='+relmsg, '_blank'); 
+    
+    });
+  
+    setTimeout(() => {
+      popup.classList.toggle('is-active-whatsapp-popup');
+    }, 3000);
+  }
+  
+</script>
 </body>
 </html>
