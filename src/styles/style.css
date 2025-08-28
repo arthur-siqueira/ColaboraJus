@@ -79,7 +79,7 @@
 
 
  .topbar {
-   background: #4d5f76;
+   background: #1d2f46;
    color: #cfe7dc;
    font-size: .9rem
  }
@@ -290,6 +290,11 @@
    padding: 18px;
    box-shadow: var(--shadow)
  }
+
+ .card span i {
+  font-size: 1.8rem;
+  color: #1d2f46;
+}
 
 
  .practice .item {
