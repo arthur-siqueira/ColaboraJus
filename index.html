@@ -7,7 +7,6 @@
   <meta name="description" content="" />
   <link rel="icon" type="image/png" href="src/img/logoimagem.png">
   <link rel="stylesheet" href="src/styles/style.css">
-  <link rel="script" href="src/javascript/script.js"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
 </head>
@@ -56,7 +55,7 @@
           <div class="stat"><b>Advogados Especializados</b><small>Excelência jurídica garantida por uma equipe multidisciplinar.</small></div>
         </div>
         <div style="margin-top:18px;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
-          <a class="btn" href="#contactos">Fale com um advogado</a>
+          <a class="btn" href="#contactos">Fale conosco</a>
         </div>
       </div>
       <div class="illus" role="img" aria-label="Imagem ilustrativa de balança da justiça">
@@ -204,42 +203,10 @@
       </div>
     </div>
     <div class="container footer-bottom">
-      <div>© <span id="year"></span> Colabora Jus — Todos os direitos reservados.</div>
+      <div>©Colabora Jus — Todos os direitos reservados.</div>
      
     </div>
   </footer>
-<script>
-function openWhats(){
-    window.open('https://wa.me/558199456533'); 
-  }
-popupWhatsApp = () => {
-  
-    let btnClosePopup = document.querySelector('.closePopup');
-    let btnOpenPopup = document.querySelector('.whatsapp-button');
-    let popup = document.querySelector('.popup-whatsapp');
-    let sendBtn = document.getElementById('send-btn');
-  
-    btnClosePopup.addEventListener("click",  () => {
-      popup.classList.toggle('is-active-whatsapp-popup')
-    })
-    
-    btnOpenPopup.addEventListener("click",  () => {
-      popup.classList.toggle('is-active-whatsapp-popup')
-       popup.style.animation = "fadeIn .6s 0.0s both";
-    })
-    
-    sendBtn.addEventListener("click", () => {
-    let msg = document.getElementById('whats-in').value;
-    let relmsg = msg.replace(/ /g,"%20");   
-     window.open('https://wa.me/558198753455?text='+relmsg, '_blank'); 
-    
-    });
-  
-    setTimeout(() => {
-      popup.classList.toggle('is-active-whatsapp-popup');
-    }, 3000);
-  }
-  
-</script>
+  <script src="src/javascript/script.js"></script>
 </body>
 </html>
