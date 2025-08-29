@@ -34,7 +34,7 @@ function myFunction() {
 // ========================
 
 // Número do WhatsApp (com DDI + DDD)
-const whatsappNumber = "5587996133033";
+const whatsappNumber = "558796133033";
 
 // Seletores
 const btnClosePopup = document.querySelector('.closePopup');
