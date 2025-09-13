@@ -412,6 +412,24 @@
    }
  }
 
+#menu.active {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #fff;
+  padding: 1rem;
+  position: absolute;
+  top: 60px;
+
+  left: 50%;                 /* começa do meio */
+  transform: translateX(-50%); /* centraliza */
+  
+  border: 1px solid #e7ecef;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  z-index: 1000;
+}
+
  @media (max-width:640px) {
 
    .grid-3,
@@ -750,7 +768,4 @@ height: 24px;
   font-size: 22px;
   transform: rotate(321deg);
 }
-
-
-
 

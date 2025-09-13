@@ -20,13 +20,17 @@ sections.forEach(s => observer.observe(s));
 // ========================
 // MENU RESPONSIVO
 // ========================
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+const hamburger = document.querySelector(".hamburger");
+const menu = document.getElementById("menu");
+
+if (hamburger && menu) {
+  hamburger.addEventListener("click", () => {
+    menu.classList.toggle("active");
+    hamburger.setAttribute(
+      "aria-expanded",
+      menu.classList.contains("active")
+    );
+  });
 }
 
 // ========================
